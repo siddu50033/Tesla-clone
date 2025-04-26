@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-sec {
+            font-family: sans-serif;
+
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .sec {
+            font-family: sans-serif;
+            background-image: url(./images/model\ y);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-bottom: 0%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 37px;
+        }
+
+        .navbar>img {
+            width: 100px;
+            background-color: transparent;
+            color: white;
+        }
+
+        .logo {
+            height: 100px;
+            background-color: transparent;
+
+        }
+
+        .Menu {
+            display: flex;
+            gap: 6%;
+        }
+
+        .Menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .Icons {
+            display: flex;
+            gap: 10px;
+            margin: 0px -3px;
+            padding: 0px 5px;
+        }
+
+        .Icons img {
+            height: 25px;
+            align-items: center;
+            width: auto;
+        }
+
+        .text-area {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            margin-top: 85px;
+        }
+
+        .text-area h1 {
+            font-size: 4.5vw;
+            margin-top: 16px;
+        }
+
+        .text-area p {
+            font-weight: 700;
+            font-size: 18px;
+            padding: 4px;
+
+        }
+
+        .text-area-1 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            margin-top: 85px;
+
+        }
+
+        .text-area-1 h1 {
+            font-size: 4.5vw;
+            margin-top: 6%;
+
+        }
+
+        .text-area-1 p {
+            font-weight: 700;
+            font-size: 25px;
+            padding: 4px;
+            text-decoration: underline;
+
+
+        }
+
+        .text-area-cyber {
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .text-area-cyber img {
+            margin-left: 40%;
+            margin-top: 9%;
+
+
+        }
+
+        .text-area-cyber p {
+            font-weight: 700;
+            font-size: 25px;
+            padding: 4px;
+            color: white;
+            margin-left: 43%;
+            text-decoration: underline;
+        }
+
+        .btn-container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .btn-container-1 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 31%;
+
+        }
+
+        .btn-container-4 {
+
+            justify-content: center;
+            display: flex;
+            margin-top: 38%;
+            width: 20%;
+            background-color: #3e6ae1;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 42%;
+            color: white;
+        }
+
+        .btn-container-2 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 32%;
+        }
+
+        .btn-container-3 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 28%;
+
+        }
+
+        .blue {
+            background-color: #3e6ae1;
+            color: white;
+            padding: 10px;
+            margin-right: 20px;
+            width: 17%;
+            border-radius: 4px;
+            border: none;
+
+        }
+
+        .black {
+            padding: 10px;
+            width: 17%;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .model-3 {
+            background-image: url(./images/model\ 3);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-top: -6%;
+
+        }
+
+        .cyber {
+            background-image: url(./images/cyber\ truck);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: 0%;
+        }
+
+        .model-x {
+            background-image: url(./images/model\ x);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+        }
+
+        .model-x h1 {
+            margin-top: 6%;
+
+        }
+
+        .model-x p {
+            width: 20;
+            font-size: 1.5vw;
+        }
+
+        .model-s {
+            background-image: url(./images/model\ s.avif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+
+        }
+
+        .model-s h1 {
+            margin-top: 7%;
+
+        }
+
+        .model-s p {
+            width: 20;
+            font-size: 1.3vw;
+        }
+
+        .solar-panels {
+            background-image: url(./images/solar\ panels.avif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+        }
+
+        .solar-panels h1 {
+            margin-top: 7%;
+
+
+        }
+
+        .solar-panels p {
+            width: 20;
+            font-size: 2.1vw;
+            font-weight: 100;
+            text-decoration: underline;
+        }
+
+        .solar-roof {
+            background-image: url(./images/solar\ roof.avif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+        }
+
+        .solar-roof h1 {
+            margin-top: 7%;
+        }
+
+        .solar-roof p {
+            width: 20;
+            font-size: 1.7vw;
+            font-weight: 100;
+        }
+
+
+        .power-wall {
+            background-image: url(./images/power\ wall.avif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+            margin-top: 20px;
+            margin-top: -6%;
+        }
+
+        .power-wall h1 {
+            margin-top: 7%;
+        }
+
+        .accessories {
+            background-image: url(./images/accessories.avif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            margin-top: -6%;
+
+        }
+
+        .accessories>h1 {
+            margin-top: 7%;
+        }
+
+        footer.footer {
+            background-color: #fff;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555;
+        }
+
+
+
+        /* footer sticky */
+
+        .footer-sticky {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        }
+
+        .drive-btn {
+            display: flex;
+            gap: 10px;
+            padding: 10px 10px;
+            margin: 10px;
+            background-color: #F4F4F4;
+            color: #111827;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .drive-btn img {
+            width: 20px;
+            height: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-sec">
+        <section class="sec">
+            <nav class="navbar">
+                <img class="logo" src="./images/tesla logo.svg" alt="Tesla logo" />
+                <div class="Menu">
+                    <a href="#">Vehicles</a>
+                    <a href="#">Energy</a>
+                    <a href="#">Charging</a>
+                    <a href="#">Discover</a>
+                    <a href="#">Shop</a>
+                </div>
+                <div class="Icons">
+                    <img src="./images/help.svg" alt="customer support">
+                    <img src="./images/globe.svg" alt="language">
+                    <img src="./images/person.svg" alt="user">
+                </div>
+            </nav>
+            <div class="text-area">
+                <h1>Model Y</h1>
+                <p>Starting at $41,490<sup>1</sup></p>
+                <p>After $7,500 Federal Tax Credit</p>
+
+            </div>
+            <div class="btn-container">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="model-3">
+            <div class="text-area-1">
+                <h1>Model 3</h1>
+                <p>0% APR Available</p>
+
+            </div>
+            <div class="btn-container-2">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="cyber">
+            <div class="text-area-cyber">
+                <img width="20%" src="./images/cyber (1).svg" />
+                <p>Lease From $799/mo</p>
+
+            </div>
+            <div class="btn-container-3">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="model-x">
+            <div class="text-area">
+                <h1>Model X</h1>
+                <p>Free Supercharging Ending Soon</p>
+
+            </div>
+            <div class="btn-container-1">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="model-s">
+            <div class="text-area">
+                <h1>Model S</h1>
+                <p>Free Supercharging Ending Soon</p>
+
+            </div>
+            <div class="btn-container-1">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="solar-panels">
+            <div class="text-area">
+                <h1>Solar Panels</h1>
+                <p>Schedule a Virtual Consultation</p>
+
+            </div>
+            <div class="btn-container-1">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="solar-roof">
+            <div class="text-area">
+                <h1>Solar Roof</h1>
+                <p>Produce Clean Energy From Your Roof</p>
+
+            </div>
+            <div class="btn-container-1">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="power-wall">
+            <div class="text-area">
+                <h1>PowerWall</h1>
+
+            </div>
+            <div class="btn-container-1">
+                <button class="blue">Order Now</button>
+                <button class="black">Learn More</button>
+            </div>
+        </section>
+        <section class="accessories">
+            <div class="text-area">
+                <h1>Accesories</h1>
+
+            </div>
+            <div>
+                <button class="btn-container-4">Shop Now</button>
+            </div>
+        </section>
+    </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                <sup>1</sup> Before the Federal Tax Credit, Model Y Long Range AWD starts at $50,630. Price includes
+                Destination and
+                Order Fees but exclude taxes and other fees. Subject to change. Vehicle shown has upgrades that will
+                increase the price.
+                The $7,500 Federal Tax Credit is available to eligible buyers and subject to MSRP caps. Not all
+                vehicles, customers or
+                finance options will be eligible. <a href="#">Terms apply</a>.
+            </p>
+            <br />
+           
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Tesla © 2025</a>
+            <a href="#">Privacy & Legal</a>
+            <a href="#">Vehicle Recalls</a>
+            <a href="#">Contact</a>
+            <a href="#">News</a>
+            <a href="#">Get Updates</a>
+            <a href="#">Locations</a>
+            <a href="#">Learn</a>
+        </div>
+    </footer>
+    <div class="footer-sticky">
+        <button class="drive-btn">
+            <img src="./images/steering-wheel.png" alt="">
+            Schedule a Drive Today
+        </button>
+    </div>
+
+
+</body>
+
+</html>
